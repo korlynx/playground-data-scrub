@@ -2,7 +2,7 @@
 How to scrub passwords or secret credentials from repo, and also detect AWS credentials.
 
 ## Install Trufflehog
-Trufflehog secrets helps scan for AWS secrets in your codde or files in github repository. Scan your code using the below command:
+[Trufflehog](https://github.com/trufflesecurity/trufflehog) secrets helps scan for AWS secrets in your codde or files in github repository. Scan your code using the below command:
 
 `trufflehog git https://github.com/<github_account_name>/<github_repo_name>`
 
