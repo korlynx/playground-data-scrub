@@ -2,17 +2,17 @@
 How to scrub passwords or secret credentials from repo, and also detect AWS credentials.
 
 ## Install Trufflehog
-[Trufflehog](https://github.com/trufflesecurity/trufflehog) secrets helps scan for AWS secrets in your codde or files in github repository. Scan your code using the below command:
+[Trufflehog](https://github.com/trufflesecurity/trufflehog) secrets help scan for AWS secrets in your code or files in github repository. Scan your code using the below command:
 
 `trufflehog git https://github.com/<github_account_name>/<github_repo_name>`
 
-## Install BSG using brew
+## Install BFG using brew
 
-Install [BSG](https://rtyley.github.io/bfg-repo-cleaner/) using the below commmand
+Install [BFG](https://rtyley.github.io/bfg-repo-cleaner/) using the below commmand
 
 `brew install bfg`
 
-Manually remove the secrets data in the file from your github repo and commit. Create a password.txt file which all the secrets that need to be romoved are stored (*This file should not be commited to the github repo!!!), run the "bsg" command to remove the secrets from the guthub commit histories.
+Manually remove the secrets data in the file from your github repo and commit. Create a password.txt file where all the secrets that are needed to be removed are stored (*This file should not be committed to the github repo!!!). Run the "bfg" command to remove the secrets from the github commit histories.
 
 `bfg --replace-text passwords.txt`
 
